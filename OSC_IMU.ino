@@ -44,14 +44,14 @@ Mahony filter;
 //Madgwick filter;
 
 int status = WL_IDLE_STATUS;
-char ssid[] = "PaulSwift"; //  your network SSID (name)
-char pass[] = "thankyou";    // your network password (use for WPA, or use as key for WEP)
+char ssid[] = "Network SSID"; //  your network SSID (name)
+char pass[] = "PASSWORD";    // your network password (use for WPA, or use as key for WEP)
 
 //the Arduino's IP
-IPAddress ip(192, 168, 1, 11);
+IPAddress ip(192, 168, 1, 1);
 //destination IP
-IPAddress outIp(192, 168, 1, 5);
-const unsigned int outPort = 9999;
+IPAddress outIp(192, 168, 1, 1);
+const unsigned int outPort = 9999; //choose port number
 
 
 WiFiUDP Udp;
